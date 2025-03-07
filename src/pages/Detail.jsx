@@ -7,6 +7,8 @@ export default function Detail() {
   const { id } = useParams();
   const navigate = useNavigate();
 
+  // try/catch/finally 로 구현된 좋아요 UI optimistic update 를 useMutation 으로 리팩터링하기
+
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [data, setData] = useState(null);
